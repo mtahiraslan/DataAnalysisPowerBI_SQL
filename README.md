@@ -22,5 +22,8 @@ This data model also shows how FACT_Budget hsa been connected to FACT_InternetSa
 <h2>Sales Overview Dashboard</h2>
 <br>
 <img src='dashboard.PNG'>
-
+<br>
+<h2>Customer Details Dashboard</h2>
+<br>
+<img src='dashboard2.PNG'>
 
