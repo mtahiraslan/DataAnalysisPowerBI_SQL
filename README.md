@@ -12,31 +12,15 @@ To create the necessary data model for doing analysis and fulfilling the busines
 One data source (sales budgets) were provided in Excel format and were connected in the data model in a later step of the process.
 Below are the SQL statements for cleansing and transforming necessary data.
 <br>
-<h3>DIM_Calendar:</h3>
+<h2>Data Model</h2>
 <br>
--- Cleansed DIM_Date Table --
-SELECT 
-  [DateKey], 
-  [FullDateAlternateKey] AS Date, 
-  --[DayNumberOfWeek], 
-  [EnglishDayNameOfWeek] AS Day, 
-  --[SpanishDayNameOfWeek], 
-  --[FrenchDayNameOfWeek], 
-  --[DayNumberOfMonth], 
-  --[DayNumberOfYear], 
-  --[WeekNumberOfYear],
-  [EnglishMonthName] AS Month, 
-  Left([EnglishMonthName], 3) AS MonthShort,   -- Useful for front end date navigation and front end graphs.
-  --[SpanishMonthName], 
-  --[FrenchMonthName], 
-  [MonthNumberOfYear] AS MonthNo, 
-  [CalendarQuarter] AS Quarter, 
-  [CalendarYear] AS Year --[CalendarSemester], 
-  --[FiscalQuarter], 
-  --[FiscalYear], 
-  --[FiscalSemester] 
-FROM 
- [AdventureWorksDW2019].[dbo].[DimDate]
-WHERE 
-  CalendarYear >= 2019
+Below is a screenshot of the data model after cleansed and prepared tables were read into Power BI.
+This data model also shows how FACT_Budget hsa been connected to FACT_InternetSales and other necessary DIM tables.
+<br>
+<img src='dataModel.PNG'>
+<br>
+<h2>Sales Overview Dashboard</h2>
+<br>
+<img src='dashboard.PNG'>
+
 
