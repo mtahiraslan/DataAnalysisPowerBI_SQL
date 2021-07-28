@@ -15,7 +15,7 @@ Below are the SQL statements for cleansing and transforming necessary data.
 <h2>Data Model</h2>
 <br>
 Below is a screenshot of the data model after cleansed and prepared tables were read into Power BI.
-This data model also shows how FACT_Budget hsa been connected to FACT_InternetSales and other necessary DIM tables.
+This data model also shows how FACT_Budget hsa been connected to FACT_InternetSales and other necessary DIM tables.<br>
 <br>
 <img src='dataModel.PNG'>
 <br>
